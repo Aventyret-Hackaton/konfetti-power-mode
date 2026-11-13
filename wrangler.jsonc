@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "konfetti",
+  "compatibility_date": "2026-11-01",
+  // Static site, no Worker script: only the site/ folder is served.
+  // The extension itself (the repo root) is not uploaded; the site's download
+  // button points at GitHub's zip of the plan-b branch.
+  "routes": [
+    { "pattern": "chrome.konfetti.ax", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./site"
+  },
+  // Required by `wrangler preview`; the Preview name defaults to the git branch.
+  "previews": {}
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Konfetti settings</title>
+  <style>
+    body {
+      font: 14px/1.45 system-ui, sans-serif;
+      margin: 0;
+      padding: 16px 20px 20px;
+      min-width: 340px;
+      color-scheme: light dark;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    input { width: 18px; height: 18px; margin: 0; accent-color: #ff3b6b; }
+    p { margin: 8px 0 0 28px; opacity: 0.75; }
+  </style>
+</head>
+<body>
+  <label>
+    <input type="checkbox" id="super">
+    Super konfetti mode
+  </label>
+  <p>
+    Typed characters explode a moment later and turn transparent in the prompt,
+    and Claude's answers appear character by character in bursts of confetti.
+  </p>
+  <script src="options.js"></script>
+</body>
+</html>

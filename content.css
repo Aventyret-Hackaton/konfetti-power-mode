@@ -1,0 +1,4 @@
+/* The character that exploded into confetti: still there, just not visible. */
+::highlight(konfetti-exploded) {
+  color: transparent;
+}

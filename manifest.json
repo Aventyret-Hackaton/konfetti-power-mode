@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Konfetti – Power Mode for Claude",
+  "short_name": "Konfetti",
+  "version": "1.2.0",
+  "description": "Every character you type in a claude.ai prompt bursts into confetti that piles up at the bottom of the screen. Blow into your microphone to clear it.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Konfetti: click to clear the pile by blowing into your microphone.",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
