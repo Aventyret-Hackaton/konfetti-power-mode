@@ -11,7 +11,7 @@ For more, switch on [Super konfetti mode](#super-konfetti-mode).
 ## Install
 
 0. Download and unpack the
-   [latest zip](https://github.com/Aventyret-Hackaton/konfetti/archive/refs/heads/plan-b.zip)
+   [latest zip](https://github.com/Aventyret-Hackaton/konfetti-power-mode/archive/refs/heads/main.zip)
    (or clone this repository).
 1. Open `chrome://extensions`.
 2. Turn on **Developer mode** (top right).
@@ -121,7 +121,7 @@ and reload the claude.ai tab.
 
 ## Website
 
-`site/` holds a one-page website with a download button (GitHub's zip of the `plan-b`
+`site/` holds a one-page website with a download button (GitHub's zip of the `main`
 branch) and install instructions. It is not part of the extension. `wrangler.jsonc`
 serves that folder as a static Cloudflare Worker; from the `plan-b` branch,
 `npx wrangler preview` publishes it as the `plan-b` Preview of the `konfetti` Worker.
